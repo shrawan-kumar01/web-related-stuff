@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    color:rgb(120, 204, 137);
+}
+/* fed the image slightely with diff color  */
+body::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,0.2)
+    /* overlay on background  */
+    z-index = -1
+
+    
+
+}
+
+.container{
+    max-width: 50vh;
+    height:100 vh;
+    border: solid rgba(199, 64, 19, 0.233) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(22, 47, 23, 0.6);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(5);
+
+}
+input[type=text],input[type=password]{
+    padding: 5px;
+    margin-left: 5px;
+}
+input::placeholder{
+    color: rgb(223, 160, 160);
+    letter-spacing: 1px;
+   text-align: left;
+   padding-left: 10px;
+
+}
+form input{
+    margin: 11px 85px;
+    background-color: rgb(67, 127, 43);
+    color: red;
+    /* border-top: 1px solid rgb(177, 219, 183) ; */
+    border-bottom: 1px solid rgb(70, 116, 70);
+    /* border-style: none; */
+    border-left: 1px solid rgba(70, 116, 70);
+    background: transparent;
+    border-radius: 5px;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+
+
+
+}
+form input:hover{
+    background-color: rgb(54, 138, 73);
+}
+
+label{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    /* color: ; */
+    letter-spacing: 1px;
+}
+.password-class{
+    margin-left: 10px;
+}
+
+h2{
+    text-align: center;
+    margin:10px 5px 0 0 ;
+    padding: 5px;
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+}
+form button{
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    color: rgba(117, 241, 97, 0.901);
+    font-weight: 900;
+
+}
+form button:hover{
+    background-color: rgb(239, 184, 94);
+}
+input:focus{
+    outline: none;
+}

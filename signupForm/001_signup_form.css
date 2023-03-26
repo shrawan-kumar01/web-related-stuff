@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* full width input field */
+
+input[type = text] , input[type = password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+input[type = text]:focus , input[type = password]:focus{
+    background-color: #ddd;
+    outline: none;
+
+hr {
+    margin-top: .35rem;
+    margin-bottom: 0.35rem;
+    border: solid 1px #f1f1ff;
+}
+
+button {
+    
+    padding:5px;
+    margin-top:1rem;
+    margin-left: 0.55rem;
+    background-color:  #04AA6D;
+    opacity: 0.9;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+
+/* extra style for the cencel byutton  */
+
+.cancelbtn{
+    padding: 4.5px;
+    color: red;
+    font-weight: 200;
+    font-size: 1.123rem;
+}
+
+/*  float cancel and sign up button and provide equal width of 50% */
+
+.cancelbtn , .signupbtn{
+    float: left;
+    width: 50%;
+
+}
+
+/* adding padding to container element  */
+
+.container{
+    padding:2rem ;
+    max-height: 50%;
+    max-width: 80%;
+    border:solid 1px  #04AA6D;
+    background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,0.1));
+}
+/* clear float */
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width:300px){
+    .cancelbtn, .signupbtn{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
